@@ -1,0 +1,362 @@
+  .main-visual {
+    position: relative; /* テキスト重ねる場合に必要 */
+    width: 100%;
+    height: 100vh; /* 画面全体表示 */
+    overflow: hidden; /* 画像のはみ出し防止 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 必要に応じて幅を指定 */
+    width: 100%; /* 例：親要素の60%幅。お好みで調整 */
+  }
+  .picture-center {
+    text-align: center;
+  }
+  
+  .mainvisual {
+    position: relative;
+    width: 100vw;           /* 画面幅いっぱい */
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;     /* 中央からはみ出す */
+    margin-right: -50vw;
+    height: 60vh;           /* 高さはお好みで */
+    overflow: hidden;
+  }
+  
+  .mainvisual img {
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;      /* 画像をはみ出さずカバー */
+    display: block;
+  }
+        
+  .mainvisual-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); /* 中央寄せ */
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5); /* 読みやすくする */
+    white-space: nowrap;
+  }
+  .mainvisual-text {
+    text-align: center;
+    width: 100%;
+  }
+  
+  .mainvisual-title {
+    font-size: 2.5rem; /* 1行目のフォントサイズ */
+    font-weight: bold;
+    display: block;
+  }
+  
+  .mainvisual-subtitle {
+    font-size: 1.2rem; /* 2行目のフォントサイズ */
+    font-weight: normal;
+    display: block;
+    margin-top: 0.5em;
+  }
+  
+  
+  /* 中央揃え基本設定 */
+  .about-section {
+    text-align: center;
+    padding: 40px 0;
+    background: #fff;
+  }
+  
+  .content-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  /* タイトルスタイル */
+  .about-title {
+    color: #FFD700; /* 黄色 */
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  /* コンテンツスタイル */
+  .about-content {
+    color: #333; /* 黒文字 */
+    line-height: 1.8;
+    text-align: center;
+  }
+  
+  .about-content p {
+    margin: 15px auto;
+    max-width: 90%;
+    align-items: center;
+  }
+  .bodying-text {
+    display: grid;
+    place-items: center;
+    height: 200px;
+  }
+  /* 親要素に適用 */
+  .container {
+  display: flex;
+  flex-direction: column; /* 縦並び */
+  align-items: center; /* 横方向の中央 */
+  justify-content: center; /* 縦方向の中央 */
+  height: 100vh; /* 画面全体の高さ */
+  gap: 20px; /* 要素間隔 */
+  }
+  .custom-table {
+    width: 100%;
+    table-layout: fixed; /* 各セルの幅を均等に */
+    border-collapse: separate;
+    border-spacing: 40px 40px; /* セル間の余白（上下・左右） */
+  }
+  
+  .image-cell {
+    width: 50%;
+    vertical-align: middle; /* 画像とテキストの上下中央揃え */
+  }
+  
+  .image-cell img {
+    width: 100%;     /* セル幅いっぱいに */
+    height: auto;    /* アスペクト比維持 */
+    display: block;
+    border-radius: 8px; /* 角丸などお好みで */
+  }
+  
+  .text-cell {
+    width: 50%;
+    vertical-align: middle;
+    padding: 0 32px; /* 左右に余白 */
+    font-size: 1.1rem;
+    line-height: 2;  /* 行間を広めに */
+    color: #222;
+  }
+  
+  .text-cell strong {
+    font-size: 1.3rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 1em;
+  }
+    
+  .image-cell {
+    text-align: center; /* セル内中央寄せ */
+  }
+  
+  .image-cell img {
+    display: block;
+    margin: 0 auto; /* 画像自体を中央に */
+  }
+  
+  .nav-menu {
+    display: flex;
+    justify-content: flex-end; /* 右寄せ */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-menu li {
+    margin-left: 30px;
+  }
+
+  .nav-menu a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px 15px;
+  display: block;
+  }
+        .news-section {
+          text-align: center;
+          margin: 60px 0;
+        }
+        
+        .news-title {
+          color: #FFD700; /* 黄色 */
+          font-weight: bold;
+          font-size: 2rem;
+          margin-bottom: 40px;
+          letter-spacing: 0.1em;
+          text-align: center;
+        }
+        
+        .news-photos {
+          display: flex;
+          justify-content: center; /* 中央揃え */
+          gap: 40px; /* 写真間のスペース */
+          flex-wrap: wrap; /* レスポンシブ対応 */
+        }
+        
+        .news-item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 220px; /* 写真とテキストの枠幅 */
+        }
+        
+        .news-item img {
+          width: 100%;
+          height: auto;
+          border-radius: 8px;
+          margin-bottom: 15px;
+          box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        
+        .news-item p {
+          margin: 0;
+          color: #333;
+          font-size: 1rem;
+        } 
+        .news-list {
+          display: flex;
+          gap: 24px;
+          justify-content: center;
+        }
+        
+        .news-card {
+          background: #fff;
+          border-radius: 8px;
+          box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+          transition: transform 0.3s, box-shadow 0.3s;
+          width: 300px;
+          padding: 16px;
+          text-align: left;
+        }
+        
+        .news-card:hover {
+          transform: translateY(-10px) scale(1.04);
+          box-shadow: 0 12px 24px rgba(0,0,0,0.18);
+          z-index: 2;
+        }
+        
+        .center-button-wrapper {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 20vh; /* 画面の高さいっぱいで中央配置 */
+        }
+        
+        .tap-button {
+          width: 220px;
+          padding: 12px 0;
+          background: #FFD700;        /* 黄色 */
+          color: #fff;                /* 文字色を白に */
+          font-size: 1.1rem;
+          font-weight: bold;
+          border: none;
+          border-radius: 30px;
+          cursor: pointer;
+          box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+          transition: background 0.2s, color 0.2s;
+          letter-spacing: 0.1em;
+        }
+        
+        .tap-button:hover {
+          background: #FFC300;        /* ホバー時は少し濃い黄色 */
+          color: #333;
+        }
+        .access-section {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: 50vh; /* 画面高さの50%で中央 */
+          padding: 40px 0;
+          background: #f8f8f8;
+        }
+        
+        .access-content {
+          text-align: center;
+          max-width: 600px;
+          margin: 0 auto;
+        }
+        .contact-section {
+          background: #fafafa;
+          padding: 60px 0 40px 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        
+        .contact-content {
+          max-width: 500px;
+          width: 100%;
+          margin: 0 auto;
+          text-align: center;
+        }
+        
+        .contact-content h2 {
+          color: #FFD700;
+          font-size: 2rem;
+          font-weight: bold;
+          margin-bottom: 15px;
+        }
+        
+        .contact-content p {
+          color: #333;
+          margin-bottom: 30px;
+        }
+        
+        .contact-form {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 18px;
+        }
+        
+        .form-group {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        
+        .form-group label {
+          margin-bottom: 6px;
+          font-weight: bold;
+          color: #444;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+          width: 100%;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 6px;
+          font-size: 1rem;
+          box-sizing: border-box;
+        }
+        
+        .contact-btn {
+          width: 160px;
+          padding: 10px 0;
+          background: #FFD700;
+          color: #fff;
+          font-weight: bold;
+          border: none;
+          border-radius: 25px;
+          cursor: pointer;
+          margin-top: 10px;
+          transition: background 0.2s;
+        }
+        
+        .contact-btn:hover {
+          background: #FFC300;
+          color: #333;
+        }
+        
+        /* フッター */
+        .site-footer {
+          background: #111;
+          color: #fff;
+          text-align: center;
+          padding: 25px 0 20px 0;
+          font-size: 1rem;
+          letter-spacing: 0.05em;
+        }
+        
+        
+        
